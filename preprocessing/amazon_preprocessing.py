@@ -69,10 +69,6 @@ def load_and_preprocess_data(file_path):
 
     return sentiment_data
 
-if __name__ == "__main__":
-    df = load_and_preprocess_data(".../data/amazon_reviews.csv")
-
-    import os
-    os.makedirs("output", exist_ok=True)
-
-    df.to_csv("output/preprocessed_amazon_reviews.csv", index=False)
+if __name__ == '__main__':
+    processed_data = load_and_preprocess_data('data/amazon_reviews.csv')
+    processed_data.to_csv('output/preprocessed_amazon_reviews.csv', index=False)
