@@ -12,6 +12,7 @@ from sklearn.preprocessing import LabelEncoder
 import string
 import os
 
+nltk.download('vader_lexicon')
 nltk.download('punkt')
 nltk.download('stopwords')
 
