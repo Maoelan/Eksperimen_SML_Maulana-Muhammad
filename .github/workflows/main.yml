@@ -34,7 +34,7 @@ jobs:
           python preprocessing/amazon_preprocessing.py
 
       - name: Upload preprocessed data
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
             name: preprocessed-dataset
             path: output/preprocessed_amazon_reviews.csv
