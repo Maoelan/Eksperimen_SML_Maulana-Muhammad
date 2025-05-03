@@ -8,18 +8,21 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  actions: read 
+
 jobs:
   preprocess:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Set up Python 3.12.7
         uses: actions/setup-python@v4
         with:
-          python-version: 3.12.7
+          python-version: "3.12.7"
 
       - name: Install dependencies
         run: |
