@@ -70,7 +70,7 @@ def load_and_preprocess_data(file_path):
     return sentiment_data
 
 if __name__ == "__main__":
-    df = load_and_preprocess_data("../data/amazon_reviews.csv")
+    df = load_and_preprocess_data(".../data/amazon_reviews.csv")
 
     import os
     os.makedirs("output", exist_ok=True)
