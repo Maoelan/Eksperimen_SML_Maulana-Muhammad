@@ -34,7 +34,7 @@ jobs:
 
       - name: Run preprocessing module
         run: |
-          python preprocessing/amazon_preprocessing.py
+          python preprocessing/automate_Maulana-Muhammad.py
 
       - name: Save preprocessed data to the repository
         run: |
